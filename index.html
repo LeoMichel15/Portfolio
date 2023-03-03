@@ -2,8 +2,9 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <title>Title</title>
 </head>
 <body>
@@ -259,19 +260,19 @@
 
             <div class="qualification__container container">
                 <div class="qualification__tabs">
-                    <div class="qualification__button button--flex">
+                    <div class="qualification__button button--flex qualification__active" data-target='#education'>
                         <i class="uil uil-graduation-cap qualification__icon"></i>
                         Éducation
                     </div>
 
-                    <div class="qualification__button button--flex">
+                    <div class="qualification__button button--flex" data-target='#work'>
                         <i class="uil uil-briefcase-alt qualification__icon"></i>
                         Travail
                     </div>
                 </div>
                 <div class="qualification__sections">
                     <!-- QA Content-->
-                    <div class="qualification__content">
+                    <div class="qualification__content qualification__active" data-content id="education">
                         <!-- Q1-->
                         <div class="qualification__data">
                             <div>
@@ -290,6 +291,8 @@
                         </div>
                         <!-- Q2-->
                         <div class="qualification__data">
+                            <div></div>
+
                             <div>
                                 <span class="qualification__rounder"></span>
                                 <span class="qualification__line"></span>
@@ -316,13 +319,13 @@
 
                             <div>
                                 <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
+<!--                                <span class="qualification__line"></span>-->
                             </div>
                         </div>
                     </div>
 
                     <!-- QB Content-->
-                    <div class="qualification__content">
+                    <div class="qualification__content" data-content id="work">
                         <!-- Q1-->
                         <div class="qualification__data">
                             <div>
@@ -341,6 +344,8 @@
                         </div>
                         <!-- Q2-->
                         <div class="qualification__data">
+                            <div></div>
+
                             <div>
                                 <span class="qualification__rounder"></span>
                                 <span class="qualification__line"></span>
@@ -367,15 +372,74 @@
 
                             <div>
                                 <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
+<!--                                <span class="qualification__line"></span>-->
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">Portfolio</h2>
+            <span class="section__subtitle">Mes derniers projets</span>
+
+            <div class="portfolio__container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- portfolio 1 -->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/portfolio1.jpg" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Modern Website</h3>
+                            <p class="portfolio__description">BLABLABLABLA</p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Demo
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- portfolio 2 -->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/portfolio2.jpg" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Modern Website</h3>
+                            <p class="portfolio__description">BLABLABLABLA</p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Demo
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- portfolio 3 -->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/portfolio3.jpg" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Modern Website</h3>
+                            <p class="portfolio__description">JE SIAS PAS QUOI METTER</p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Demo
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next">
+<!--                    <i class="uil uil-angle-right swiper-portfolio-icon"></i>-->
+                </div>
+                <div class="swiper-button-prev">
+<!--                    <i class="uil uil-angle-left swiper-portfolio-icon"></i>-->
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
     </main>
 
+<script src="assets/js/swiper-bundle.min.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
