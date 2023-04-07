@@ -324,8 +324,15 @@ img{
     align-self: center;
 }
 
+.projet .about__img {
+    width: 500px;
+    border-radius: .5rem;
+    justify-self: center;
+    align-self: center;
+}
+
 .about__description{
-    text-align: center;
+    text-align: justify;
     margin-bottom: var(--mb-2-5);
 }
 
@@ -405,6 +412,12 @@ img{
 .skills__name{
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
+}
+
+.skills__number{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    padding-left: 1rem;
 }
 
 .skills__close .skills__list{
@@ -541,13 +554,15 @@ img{
 }
 
 .work-title{
-    font-size: var(--h2-font-size);
+    /*font-size: var(--h2-font-size);*/
+    color: #FFFFFF;
 }
 
 .emoji{
     transform: none;
     max-width: 50%;
     max-height: 50%;
+    /*size: 1in;*/
 }
 
 .contact__container{
@@ -781,7 +796,6 @@ img{
         justify-content: center;
         /*background-color: aquamarine;*/
     }
-
 }
 
 @media screen and (min-width: 768px){
@@ -797,6 +811,9 @@ img{
     }
     .section__subtitle{
         margin-bottom: 4rem;
+    }
+    .sectionbg{
+        padding: 2rem 0 4rem;
     }
     .header{
         top: 0;
@@ -845,8 +862,8 @@ img{
     .about__img{
         width: 350px;
     }
-    .about__description{
-        text-align: initial;
+    .projet .about__img{
+        width: 650px;
     }
     .about__info{
         justify-content: space-between;
@@ -913,4 +930,59 @@ img{
     .container{
         max-width: none;
     }
+}
+
+.imgbg{
+    height: 100%;
+    width: 100%;
+}
+.sectionbg{
+    /*padding-bottom: 4rem;*/
+    padding: 2rem 0 4rem;
+    /*height: 100vh;*/
+    /*background-color: blueviolet;*/
+}
+
+.containerTitre{
+    position: relative;
+}
+
+.containerTitre .text {
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 40%;
+    width: 60%;
+    border-radius: .5rem;
+    font-size: var(--big-font-size);
+}
+
+.containerTitreWhite{
+    position: relative;
+}
+
+.containerTitreWhite .textWhite {
+    background: rgba(192,192,192,0.3);
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 40%;
+    width: 60%;
+    border-radius: .5rem;
+    font-size: var(--big-font-size);
+}
+
+.text h2 {
+    color: #FFFFFF;
+}
+
+.textWhite h2 {
+    color: #000000;
 }
