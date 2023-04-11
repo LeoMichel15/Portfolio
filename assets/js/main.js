@@ -209,3 +209,36 @@ function animate() {
 animate();
 
 //Mail
+const contactForm = document.getElementById('contact-form'),
+      contactName = document.getElementById('contact-name'),
+      contactEmail = document.getElementById('contact-email'),
+      contactProjet = document.getElementById('contact-projet'),
+      contactMessage = document.getElementById('contact-message'),
+      contactNotif = document.getElementById('contact_notif')
+
+const sendEmail = (e) =>{
+    e.preventDefault();
+
+    if (contactName.value === '' || contactEmail.value === '' || contactProjet.value === ''){
+        contactNotif.classList.remove('color-blue')
+        contactNotif.classList.add('color-red')
+
+        contactNotif.textContent = 'Remplissez tous les champs de texte !'
+    }else {
+        emailjs.sendForm('service_chklwdb','template_okypq1e','#contact-form','0GoXVHtT3G4iXiDJr')
+            .then(() => {
+                contactNotif.classList.add('color-blue')
+                contactNotif.textContent = 'Message envoyé'
+
+                setTimeout(() =>{
+                    contactNotif.textContent = ''
+                }, 5000)
+            })
+        contactName.value = ''
+        contactEmail.value = ''
+        contactProjet.value = ''
+        contactMessage.value = ''
+    }
+}
+contactForm.addEventListener('submit', sendEmail)
+

@@ -986,3 +986,11 @@ img{
 .textWhite h2 {
     color: #000000;
 }
+
+.color-red{
+    color: hsl(4, 71%, 50%);
+}
+
+.color-blue{
+    color: hsl(207, 56%, 45%);
+}
