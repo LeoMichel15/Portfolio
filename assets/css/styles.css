@@ -994,3 +994,13 @@ img{
 .color-blue{
     color: hsl(207, 56%, 45%);
 }
+
+.carrousel_div{
+    display: flex;
+    justify-content: center;
+}
+
+.carrousel{
+    width: 45%;
+    height: 800px;
+}
