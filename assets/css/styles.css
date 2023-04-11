@@ -699,6 +699,16 @@ img{
 .show-scroll{
     bottom: 5rem;
 }
+/*=== Carroussel ==*/
+.carrousel_div{
+    display: flex;
+    justify-content: center;
+}
+
+.carrousel{
+    width: 400px;
+    height: 425px;
+}
 
 /*BACKGROUND*/
 
@@ -901,6 +911,11 @@ img{
         grid-template-rows: repeat(2,1fr);
         column-gap: 2rem;
     }
+
+    .carrousel{
+        width: 600px;
+        height: 625px;
+    }
 }
 @media screen and(min-width: 1024px) {
     .header,
@@ -929,6 +944,10 @@ img{
     }
     .container{
         max-width: none;
+    }
+    .carrousel{
+        width: 800px;
+        height: 800px;
     }
 }
 
@@ -993,14 +1012,4 @@ img{
 
 .color-blue{
     color: hsl(207, 56%, 45%);
-}
-
-.carrousel_div{
-    display: flex;
-    justify-content: center;
-}
-
-.carrousel{
-    width: 45%;
-    height: 800px;
 }
