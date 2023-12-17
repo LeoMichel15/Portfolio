@@ -713,8 +713,11 @@ img{
 /*BACKGROUND*/
 
 .home_background{
-    background-color: black;
+    /*background-color: black;*/
     height: 100vh;
+    padding-right: 70px;
+    padding-left: 70px;
+    margin-bottom: 450px;
 }
 
 #container {
